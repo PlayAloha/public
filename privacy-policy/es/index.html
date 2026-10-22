@@ -30,49 +30,79 @@
     <section>
       <h2>1. Resumen</h2>
       <ul>
-        <li>Aloha <strong>no tiene cuenta ni inicio de sesión</strong>. No pedimos nombre real, correo, teléfono ni documento.</li>
-        <li>Para que las salas y las compras funcionen, el servidor crea un <strong>identificador anónimo</strong> para tu instalación.</li>
-        <li>Lo que escribes en una sala (apodo y respuestas) se guarda <strong>solo mientras la sala existe</strong>.</li>
-        <li>Medimos el uso solo si activas <strong>Compartir datos de uso</strong>; los eventos mínimos van al servidor de Aloha en Cloudflare para su análisis agregado. Usamos <strong>Firebase Crashlytics</strong> (fallos), <strong>Google AdMob</strong> (anuncios en la versión gratuita) y <strong>RevenueCat</strong> (compras).</li>
-        <li>La app <strong>no accede</strong> a la cámara, el micrófono, los contactos, las fotos ni la ubicación.</li>
-        <li><strong>No vendemos</strong> datos personales.</li>
+      <li>Aloha <strong>no tiene cuenta ni inicio de sesión</strong>. No pedimos nombre real, correo, teléfono ni documento.</li>
+      <li>Para que las salas y las compras funcionen, el servidor crea un <strong>identificador anónimo</strong> para tu instalación.</li>
+      <li>Lo que escribes en una sala (apodo y respuestas) se guarda <strong>solo mientras la sala existe</strong>.</li>
+      <li>Medimos el uso solo si activas <strong>Compartir datos de uso</strong> en la apertura actual de la app; los eventos mínimos van al servidor de Aloha en Cloudflare para su análisis agregado. Usamos <strong>Firebase Crashlytics</strong> (fallos), <strong>Google AdMob</strong> (anuncios en la versión gratuita) y <strong>RevenueCat</strong> (compras).</li>
+      <li>La app <strong>no accede</strong> a la cámara, el micrófono, los contactos, las fotos ni la ubicación.</li>
+      <li><strong>No vendemos</strong> datos personales.</li>
       </ul>
     </section>
     <section>
       <h2>2. Responsable y contacto</h2>
-      <p>Responsable: <strong>Vinícius Brilhante Dezotti</strong>, desarrollador de Aloha, en Brasil. Contacto de privacidad, también como encargado de protección de datos (LGPD art. 41): <a href="mailto:dezoapps@gmail.com">dezoapps@gmail.com</a>.</p>
+      <p>Responsable: <strong>Vinícius Brilhante Dezotti</strong>, desarrollador de Aloha, en Brasil.
+      Contacto de privacidad, también como encargado de protección de datos (LGPD art. 41): <a href="mailto:dezoapps@gmail.com">dezoapps@gmail.com</a>.</p>
     </section>
     <section>
       <h2>3. Datos que tratamos</h2>
       <h3>3.1 Datos guardados solo en tu aparato</h3>
       <table>
-        <thead><tr><th>Dato</th><th>Para qué</th></tr></thead>
-        <tbody>
-          <tr><td>Apodo y tiki elegidos</td><td>Completar tu perfil al entrar en una sala</td></tr>
-          <tr><td>Ajustes (sonido, música, vibración, idioma, guías ya vistas)</td><td>Recordar tus preferencias</td></tr>
-          <tr><td>Nombres de los lugares en el modo “un solo celular” (opcionales)</td><td>Mostrar de quién es el turno</td></tr>
-          <tr><td>Sesión de la última sala (código, identificadores y clave de sesión)</td><td>Volver a la sala si se cae la conexión</td></tr>
-          <tr><td>Racha, estadísticas y tableros del Desafío diario</td><td>Mostrar tu historial</td></tr>
-          <tr><td>Partida local en curso e historial reciente de palabras</td><td>Retomar la partida y evitar repeticiones</td></tr>
-          <tr><td>Partidas jugadas hoy y si ya apareció el aviso de anuncios</td><td>Aplicar las reglas de anuncios</td></tr>
-          <tr><td>Credencial de la identidad anónima y estado de las compras</td><td>Guardados en el <strong>almacenamiento seguro</strong> del sistema, fuera de la copia de seguridad</td></tr>
-        </tbody>
+      <thead>
+      <tr>
+      <th>Dato</th>
+      <th>Para qué</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>Apodo y tiki elegidos</td>
+      <td>Completar tu perfil al entrar en una sala</td>
+      </tr>
+      <tr>
+      <td>Ajustes (sonido, música, vibración, idioma, guías ya vistas)</td>
+      <td>Recordar tus preferencias</td>
+      </tr>
+      <tr>
+      <td>Nombres de los lugares en el modo “un solo celular” (opcionales)</td>
+      <td>Mostrar de quién es el turno</td>
+      </tr>
+      <tr>
+      <td>Sesión de la última sala (código, identificadores y clave de sesión)</td>
+      <td>Volver a la sala si se cae la conexión</td>
+      </tr>
+      <tr>
+      <td>Racha, estadísticas y tableros del Desafío diario</td>
+      <td>Mostrar tu historial</td>
+      </tr>
+      <tr>
+      <td>Partida local en curso e historial reciente de palabras</td>
+      <td>Retomar la partida y evitar repeticiones</td>
+      </tr>
+      <tr>
+      <td>Partidas jugadas hoy y si ya apareció el aviso de anuncios</td>
+      <td>Aplicar las reglas de anuncios</td>
+      </tr>
+      <tr>
+      <td>Credencial de la identidad anónima y estado de las compras</td>
+      <td>Guardados en el <strong>almacenamiento seguro</strong> del sistema, fuera de la copia de seguridad</td>
+      </tr>
+      </tbody>
       </table>
       <p>Estos datos no salen del aparato, salvo lo que se envía al servidor de las salas y a los proveedores descritos abajo. Los borras al limpiar los datos de la app o desinstalarla. El sistema puede incluir parte de ellos en la copia de seguridad del aparato (como las estadísticas del Desafío diario).</p>
       <h3>3.2 Salas conectadas</h3>
       <p>Cuando creas o entras en una sala, el servidor de Aloha (Cloudflare) recibe y guarda, <strong>solo mientras dura la sala</strong>:</p>
       <ul>
-        <li>el código de la sala;</li>
-        <li>tu apodo (hasta 20 caracteres), tu tiki y el color de tu lugar;</li>
-        <li>identificadores aleatorios del jugador y de la sesión;</li>
-        <li>el estado de la partida, incluidas las <strong>respuestas escritas</strong> en Respuesta Falsa y los votos.</li>
+      <li>el código de la sala;</li>
+      <li>tu apodo (hasta 20 caracteres), tu tiki y el color de tu lugar;</li>
+      <li>identificadores aleatorios del jugador y de la sesión;</li>
+      <li>el estado de la partida, incluidas las <strong>respuestas escritas</strong> en Respuesta Falsa y los votos.</li>
       </ul>
       <p>El apodo, el tiki y las respuestas los ven los demás jugadores de la misma sala. <strong>La sala y todo lo que contiene se borran</strong> cuando todos salen, cuando no queda nadie después de un minuto de reconexión, o tras 6 horas sin actividad. El identificador anónimo de acceso (3.3) nunca se muestra a los demás jugadores.</p>
       <h3>3.3 Identificador anónimo y compras</h3>
       <p>La primera vez que la app lo necesita, el servidor crea un <strong>identificador anónimo</strong> aleatorio para la instalación y una clave secreta (el servidor guarda solo una versión cifrada, el hash). Vinculados a ese identificador, el servidor guarda:</p>
       <ul>
-        <li>si ya se usó la Party de demostración, y el inicio y fin de las Partys creadas;</li>
-        <li>un resumen de tus compras: plan, vencimiento, fecha de compra, producto e identificadores de la transacción informados por la tienda y por RevenueCat.</li>
+      <li>si ya se usó la Party de demostración, y el inicio y fin de las Partys creadas;</li>
+      <li>un resumen de tus compras: plan, vencimiento, fecha de compra, producto e identificadores de la transacción informados por la tienda y por RevenueCat.</li>
       </ul>
       <p>Estos datos sirven para habilitar y restaurar el acceso de pago, impedir fraudes y dar soporte. Se guardan mientras sean necesarios para ello y para cumplir obligaciones legales y fiscales. Puedes pedir su eliminación (sección 7).</p>
       <h3>3.4 Dirección IP y datos de conexión</h3>
@@ -80,27 +110,27 @@
       <h3>3.5 Métricas de uso (servidor de Aloha)</h3>
       <p>Para entender qué juegos se usan y mejorar la app, enviamos eventos al servidor de Aloha <strong>solo si activas Ajustes → Compartir datos de uso</strong>. Los eventos permitidos son:</p>
       <ul>
-        <li>las pantallas abiertas, por el nombre genérico de la pantalla (nunca el código de la sala);</li>
-        <li>inicio y fin de partida y creación de Party: modo, juego, número de jugadores y duración;</li>
-        <li>apertura de la pantalla de compra y desde dónde, compras (qué plan), restauraciones;</li>
-        <li>recompensas recibidas (qué función).</li>
+      <li>las pantallas abiertas, por el nombre genérico de la pantalla (nunca el código de la sala);</li>
+      <li>inicio y fin de partida y creación de Party: modo, juego, número de jugadores y duración;</li>
+      <li>apertura de la pantalla de compra y desde dónde, compras (qué plan), restauraciones;</li>
+      <li>recompensas recibidas (qué función).</li>
       </ul>
       <p>El servidor acepta solo tipos de eventos y parámetros permitidos. El conjunto de métricas de uso de Cloudflare guarda nombres de eventos, categorías y recuentos; <strong>no guarda identificador de instalación, dirección IP, apodos, nombres, códigos de sala ni textos escritos</strong>. La IP se usa temporalmente para limitar abusos en la entrada del servidor y puede aparecer en registros técnicos de borde de Cloudflare (sección 3.4).</p>
-      <p>Sin una elección afirmativa, <strong>no se envía ninguna métrica de uso</strong>, en ninguna región. Si activaste las métricas en una versión anterior que usaba Firebase Analytics, tendrás que elegir de nuevo para esta nueva forma de medición; la elección anterior no se conserva. No guardamos eventos anteriores para enviarlos después. Puedes revocar tu elección en <strong>Ajustes → Compartir datos de uso</strong>; los nuevos envíos se detienen inmediatamente. Las opciones de anuncios de Google son independientes y no activan las métricas de uso.</p>
+      <p>Sin una elección afirmativa <strong>en la apertura actual de la app</strong>, no se envía ninguna métrica de uso, en ninguna región. El ajuste comienza desactivado cada vez que abres la app y debes activarlo de nuevo si quieres compartir datos de uso. No guardamos una autorización positiva para restaurarla automáticamente; esto evita que un estado antiguo vuelva a activar la recogida tras un fallo al guardar la revocación. Tampoco se conserva la elección de una versión anterior que usaba Firebase Analytics. No guardamos eventos anteriores para enviarlos después. Puedes revocar tu elección en <strong>Ajustes → Compartir datos de uso</strong>; los nuevos envíos se detienen inmediatamente. Las opciones de anuncios de Google son independientes y no activan las métricas de uso.</p>
       <h3>3.6 Fallos (Firebase Crashlytics)</h3>
       <p>Cuando la app falla, Crashlytics recibe un informe técnico: el error, el punto del código donde ocurrió, versión de la app, modelo y sistema del aparato, y un identificador de la instalación. Lo usamos solo para corregir errores.</p>
       <h3>3.7 Anuncios (Google AdMob)</h3>
       <p>La versión gratuita puede mostrar anuncios de Google AdMob. Para elegir, mostrar y medir anuncios y evitar fraudes, Google y sus socios pueden tratar:</p>
       <ul>
-        <li>el <strong>identificador de publicidad</strong> del aparato (IDFA en iOS, solo si lo permites; ID de publicidad en Android);</li>
-        <li>IP, país aproximado, modelo y sistema del aparato, idioma;</li>
-        <li>interacciones con los anuncios.</li>
+      <li>el <strong>identificador de publicidad</strong> del aparato (IDFA en iOS, solo si lo permites; ID de publicidad en Android);</li>
+      <li>IP, país aproximado, modelo y sistema del aparato, idioma;</li>
+      <li>interacciones con los anuncios.</li>
       </ul>
       <p>Cómo lo controlas:</p>
       <ul>
-        <li><strong>iOS:</strong> antes de la solicitud del sistema, Aloha explica para qué sirve; puedes rechazar sin perder nada en el juego. Sin permiso, los anuncios no usan el IDFA.</li>
-        <li><strong>Android:</strong> puedes borrar o restablecer el ID de publicidad y desactivar la personalización en los ajustes de Google del aparato.</li>
-        <li><strong>Europa, Reino Unido y Suiza:</strong> un formulario de consentimiento de Google aparece antes de cualquier anuncio. Puedes cambiar tu elección después en <strong>Ajustes → Opciones de anuncios</strong>.</li>
+      <li><strong>iOS:</strong> antes de la solicitud del sistema, Aloha explica para qué sirve; puedes rechazar sin perder nada en el juego. Sin permiso, los anuncios no usan el IDFA.</li>
+      <li><strong>Android:</strong> puedes borrar o restablecer el ID de publicidad y desactivar la personalización en los ajustes de Google del aparato.</li>
+      <li><strong>Europa, Reino Unido y Suiza:</strong> un formulario de consentimiento de Google aparece antes de cualquier anuncio. Puedes cambiar tu elección después en <strong>Ajustes → Opciones de anuncios</strong>.</li>
       </ul>
       <p>Los anuncios de Aloha se limitan a contenido apto para adolescentes (clasificación “T” de Google). Los suscriptores y los invitados de una Party Premium no ven anuncios.</p>
       <p>Más información: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a> y <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a>.</p>
@@ -114,29 +144,81 @@
     <section>
       <h2>4. Bases legales (LGPD; RGPD cuando corresponda)</h2>
       <table>
-        <thead><tr><th>Finalidad</th><th>Base legal</th></tr></thead>
-        <tbody>
-          <tr><td>Hacer funcionar las salas, los juegos y las compras</td><td>Ejecución del contrato</td></tr>
-          <tr><td>Prevenir abusos y fraudes, proteger el servicio</td><td>Interés legítimo</td></tr>
-          <tr><td>Métricas de uso</td><td>Consentimiento, al activar el ajuste</td></tr>
-          <tr><td>Informes de fallos</td><td>Interés legítimo</td></tr>
-          <tr><td>Anuncios personalizados</td><td>Consentimiento, por la solicitud del sistema o el formulario de Google</td></tr>
-          <tr><td>Anuncios no personalizados</td><td>Interés legítimo, para mantener la app gratuita</td></tr>
-          <tr><td>Guardar datos de compras</td><td>Obligación legal y ejecución del contrato</td></tr>
-        </tbody>
+      <thead>
+      <tr>
+      <th>Finalidad</th>
+      <th>Base legal</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>Hacer funcionar las salas, los juegos y las compras</td>
+      <td>Ejecución del contrato</td>
+      </tr>
+      <tr>
+      <td>Prevenir abusos y fraudes, proteger el servicio</td>
+      <td>Interés legítimo</td>
+      </tr>
+      <tr>
+      <td>Métricas de uso</td>
+      <td>Consentimiento, al activar el ajuste</td>
+      </tr>
+      <tr>
+      <td>Informes de fallos</td>
+      <td>Interés legítimo</td>
+      </tr>
+      <tr>
+      <td>Anuncios personalizados</td>
+      <td>Consentimiento, por la solicitud del sistema o el formulario de Google</td>
+      </tr>
+      <tr>
+      <td>Anuncios no personalizados</td>
+      <td>Interés legítimo, para mantener la app gratuita</td>
+      </tr>
+      <tr>
+      <td>Guardar datos de compras</td>
+      <td>Obligación legal y ejecución del contrato</td>
+      </tr>
+      </tbody>
       </table>
     </section>
     <section>
       <h2>5. Con quién compartimos</h2>
       <table>
-        <thead><tr><th>Proveedor</th><th>Para qué</th><th>Privacidad</th></tr></thead>
-        <tbody>
-          <tr><td>Cloudflare</td><td>Alojar el servidor de las salas y del acceso y guardar eventos mínimos de uso tras el consentimiento para su análisis agregado</td><td><a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></td></tr>
-          <tr><td>Google (Firebase Crashlytics)</td><td>Informes de fallos</td><td><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td></tr>
-          <tr><td>Google (AdMob)</td><td>Anuncios</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-          <tr><td>RevenueCat</td><td>Validar compras y suscripciones</td><td><a href="https://www.revenuecat.com/privacy/">https://www.revenuecat.com/privacy/</a></td></tr>
-          <tr><td>Apple App Store y Google Play</td><td>Procesar pagos, reembolsos y restauraciones</td><td>Políticas de cada tienda</td></tr>
-        </tbody>
+      <thead>
+      <tr>
+      <th>Proveedor</th>
+      <th>Para qué</th>
+      <th>Privacidad</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>Cloudflare</td>
+      <td>Alojar el servidor de las salas y del acceso y guardar eventos mínimos de uso tras el consentimiento para su análisis agregado</td>
+      <td><a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></td>
+      </tr>
+      <tr>
+      <td>Google (Firebase Crashlytics)</td>
+      <td>Informes de fallos</td>
+      <td><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td>
+      </tr>
+      <tr>
+      <td>Google (AdMob)</td>
+      <td>Anuncios</td>
+      <td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td>
+      </tr>
+      <tr>
+      <td>RevenueCat</td>
+      <td>Validar compras y suscripciones</td>
+      <td><a href="https://www.revenuecat.com/privacy/">https://www.revenuecat.com/privacy/</a></td>
+      </tr>
+      <tr>
+      <td>Apple App Store y Google Play</td>
+      <td>Procesar pagos, reembolsos y restauraciones</td>
+      <td>Políticas de cada tienda</td>
+      </tr>
+      </tbody>
       </table>
       <p>También podemos compartir datos si la ley o una autoridad lo exige, o para defender derechos en procesos. <strong>No vendemos</strong> datos personales ni los compartimos para publicidad más allá de lo descrito aquí.</p>
     </section>
@@ -148,13 +230,13 @@
       <h2>7. Tus derechos</h2>
       <p>En cualquier momento puedes:</p>
       <ul>
-        <li>confirmar si tratamos tus datos y acceder a ellos;</li>
-        <li>corregirlos;</li>
-        <li>pedir anonimización, bloqueo o <strong>eliminación</strong>;</li>
-        <li>pedir la portabilidad;</li>
-        <li>saber con quién los compartimos;</li>
-        <li>retirar consentimientos (ATT en los ajustes de iOS; el formulario en Ajustes → Opciones de anuncios; las métricas en Ajustes → Compartir datos de uso);</li>
-        <li>reclamar ante la autoridad de protección de datos de Brasil (ANPD) o de tu país.</li>
+      <li>confirmar si tratamos tus datos y acceder a ellos;</li>
+      <li>corregirlos;</li>
+      <li>pedir anonimización, bloqueo o <strong>eliminación</strong>;</li>
+      <li>pedir la portabilidad;</li>
+      <li>saber con quién los compartimos;</li>
+      <li>retirar consentimientos (ATT en los ajustes de iOS; el formulario en Ajustes → Opciones de anuncios; las métricas en Ajustes → Compartir datos de uso);</li>
+      <li>reclamar ante la autoridad de protección de datos de Brasil (ANPD) o de tu país.</li>
       </ul>
       <p>Como no hay cuenta, para solicitudes sobre el identificador anónimo o compras, escribe a <a href="mailto:dezoapps@gmail.com">dezoapps@gmail.com</a> desde el botón de soporte de la pantalla de compra (ya incluye el identificador), o indica el identificador de la transacción de la tienda. Respondemos en un plazo de 15 días. Los datos bajo control de Apple, Google o RevenueCat también se pueden pedir directamente a ellos.</p>
     </section>
@@ -170,15 +252,38 @@
     <section>
       <h2>10. Conservación</h2>
       <table>
-        <thead><tr><th>Dato</th><th>Cuánto tiempo</th></tr></thead>
-        <tbody>
-          <tr><td>Datos en el aparato</td><td>Hasta que borres los datos de la app o la desinstales</td></tr>
-          <tr><td>Contenido de una sala</td><td>Hasta que la sala termine (como máximo 6 horas sin actividad)</td></tr>
-          <tr><td>Identificador anónimo y resumen de compras</td><td>Mientras sea necesario para el acceso de pago, el soporte y las obligaciones legales, o hasta una solicitud de eliminación</td></tr>
-          <tr><td>Métricas de uso consentidas</td><td>Hasta 3 meses en Cloudflare Analytics Engine, sin identificador de persona o instalación en el conjunto de métricas</td></tr>
-          <tr><td>Informes de fallos</td><td>Hasta 90 días en Firebase Crashlytics</td></tr>
-          <tr><td>Datos de los proveedores de anuncios y compras</td><td>Según la política de cada proveedor</td></tr>
-        </tbody>
+      <thead>
+      <tr>
+      <th>Dato</th>
+      <th>Cuánto tiempo</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>Datos en el aparato</td>
+      <td>Hasta que borres los datos de la app o la desinstales</td>
+      </tr>
+      <tr>
+      <td>Contenido de una sala</td>
+      <td>Hasta que la sala termine (como máximo 6 horas sin actividad)</td>
+      </tr>
+      <tr>
+      <td>Identificador anónimo y resumen de compras</td>
+      <td>Mientras sea necesario para el acceso de pago, el soporte y las obligaciones legales, o hasta una solicitud de eliminación</td>
+      </tr>
+      <tr>
+      <td>Métricas de uso consentidas</td>
+      <td>Hasta 3 meses en Cloudflare Analytics Engine, sin identificador de persona o instalación en el conjunto de métricas</td>
+      </tr>
+      <tr>
+      <td>Informes de fallos</td>
+      <td>Hasta 90 días en Firebase Crashlytics</td>
+      </tr>
+      <tr>
+      <td>Datos de los proveedores de anuncios y compras</td>
+      <td>Según la política de cada proveedor</td>
+      </tr>
+      </tbody>
       </table>
     </section>
     <section>
@@ -187,7 +292,8 @@
     </section>
     <section>
       <h2>12. Contacto</h2>
-      <p>Vinícius Brilhante Dezotti <a href="mailto:dezoapps@gmail.com">dezoapps@gmail.com</a></p>
+      <p>Vinícius Brilhante Dezotti
+      <a href="mailto:dezoapps@gmail.com">dezoapps@gmail.com</a></p>
     </section>
   </article>
 
